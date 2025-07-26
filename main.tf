@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "google" {
-  project = "ai-testcase" # <-- Update with your GCP Project ID
+  project = "ai-testcase" 
   region  = "us-central1"
 }
 
@@ -32,7 +32,7 @@ resource "google_compute_firewall" "allow_http_ssh" {
 
   allow {
     protocol = "tcp"
-    ports    = ["22", "8000"] # Port 22 for SSH, 8000 for our API
+    ports    = ["22", "8000"]
   }
 
   source_ranges = ["0.0.0.0/0"]
@@ -40,32 +40,25 @@ resource "google_compute_firewall" "allow_http_ssh" {
 
 resource "google_compute_instance" "phi3_vm" {
   name         = "phi3-vision-vm"
-  machine_type = "n1-standard-4" # 4 vCPUs, 15 GB RAM
+  # Use a cost-effective, general-purpose machine type
+  machine_type = "e2-standard-4" # 4 vCPUs, 16 GB RAM
   zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
+      # Switch back to Debian, as our script will install Docker
       image = "debian-cloud/debian-11"
-      size  = 100 # GB
+      size  = 50 # 50 GB is enough for a CPU setup
     }
   }
 
-  guest_accelerator {
-    type  = "nvidia-tesla-t4"
-    count = 1
-  }
-
-  # This script runs automatically when the VM is created
+  # The startup script will configure the VM
   metadata_startup_script = file("setup_vm.sh")
 
   network_interface {
     network    = google_compute_network.phi3_vpc.id
     subnetwork = google_compute_subnetwork.phi3_subnet.id
     access_config {} # Assigns an ephemeral public IP
-  }
-
-  scheduling {
-    on_host_maintenance = "TERMINATE"
   }
 
   service_account {
