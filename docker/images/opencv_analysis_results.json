@@ -1,0 +1,130 @@
+{
+  "image_path": "images/loginpage.png",
+  "opencv_analysis": {
+    "image_path": "images/loginpage.png",
+    "dimensions": {
+      "width": 3014,
+      "height": 1776,
+      "channels": 3
+    },
+    "ui_elements": {
+      "buttons": [
+        {
+          "x": 165,
+          "y": 466,
+          "width": 63,
+          "height": 21,
+          "area": 104,
+          "aspect_ratio": 3.0
+        }
+      ],
+      "input_fields": [],
+      "images": [
+        {
+          "x": 2915,
+          "y": 1671,
+          "width": 74,
+          "height": 76,
+          "area": 1597,
+          "aspect_ratio": 0.97
+        },
+        {
+          "x": 2533,
+          "y": 1417,
+          "width": 161,
+          "height": 176,
+          "area": 107,
+          "aspect_ratio": 0.91
+        },
+        {
+          "x": 2276,
+          "y": 955,
+          "width": 625,
+          "height": 612,
+          "area": 594,
+          "aspect_ratio": 1.02
+        },
+        {
+          "x": 1975,
+          "y": 611,
+          "width": 193,
+          "height": 321,
+          "area": 115,
+          "aspect_ratio": 0.6
+        },
+        {
+          "x": 305,
+          "y": 510,
+          "width": 69,
+          "height": 59,
+          "area": 173,
+          "aspect_ratio": 1.17
+        }
+      ],
+      "total_contours": 754,
+      "button_count": 1,
+      "input_field_count": 0,
+      "image_count": 7
+    },
+    "text_content": {
+      "extracted_text": "OCR not available",
+      "text_locations": [],
+      "text_region_count": 0
+    },
+    "visual_analysis": {
+      "edge_density": 0.012146,
+      "dominant_colors": [
+        {
+          "r": 56,
+          "g": 56,
+          "b": 56
+        },
+        {
+          "r": 250,
+          "g": 249,
+          "b": 248
+        },
+        {
+          "r": 19,
+          "g": 20,
+          "b": 21
+        },
+        {
+          "r": 160,
+          "g": 158,
+          "b": 159
+        },
+        {
+          "r": 88,
+          "g": 88,
+          "b": 88
+        }
+      ],
+      "line_count": 247
+    },
+    "layout_analysis": {
+      "element_positions": {
+        "buttons": [
+          "top-left"
+        ]
+      },
+      "alignment_analysis": "",
+      "layout_type": "action_heavy",
+      "form_structure": {}
+    }
+  },
+  "opencv_description": "This is a 3014x1776 pixel image. containing 1 button(s). - Button 1 at position (165, 466) with size 63x21. Layout type appears to be: action_heavy. Edge density: 0.012146 (complexity indicator). Dominant color: RGB(56, 56, 56).",
+  "test_cases": [],
+  "raw_response": "{\n  \"testCases\": [\n    {\n      \"title\": \"Button Click Test\",\n      \"description\": \"Verify that a click action correctly triggers any associated functionality for Button 1\",\n      \"steps\": [\n        \"Step 1: Locate the Button 1 at position (165, 466) on the interface.\",\n        \"Step 2: Simulate a mouse click on the button using automated testing tools.\",\n        \"Step 3: Expected result is that any attached functionality should execute without errors.\"\n      ],\n      \"category\": \"functional\",\n      \"priority\": \"high\",\n      \"detectedElements\": [\"Button 1\"]\n    },\n    {\n      \"title\": \"Accessibility Test - Button Label Check\",\n      \"description\": \"Ensure that the button is accessible and its label meets accessibility guidelines\",\n      \"steps\": [\n        \"Step 1: Identify Button 1 and use automated tools to extract button text content.\",\n        \"Step 2: Cross-check extracted text against WCAG (Web Content Accessibility Guidelines).\",\n        \"Step 3: Expected result is that the button's label complies with accessibility standards.\"\n      ],\n      \"category\": \"accessibility\",\n      \"priority\": \"medium\",\n      \"detectedElements\": [\"Button 1\"]\n    },\n    {\n      \"title\": \"Visual Test - Color Consistency\",\n      \"description\": \"Verify the visual consistency of Button 1 against dominant color RGB(56, 56, 56)\",\n      \"steps\": [\n        \"Step 1: Capture the button's color profile.\",\n        \"Step 2: Compare it with the extracted dominant color value (RGB(56, 56, 56)).\",\n        \"Step 3: Expected result is that the button matches the dominant color.\"\n      ],\n      \"category\": \"visual\",\n      \"priority\": \"medium\",\n      \"detectedElements\": [\"Button 1\"]\n    },\n    {\n      \"title\": \"Interaction Test - Text Under Button\",\n      \"description\": \"Check if the extracted text 'OCR not available...' is interactive and responds to user actions",
+  "api_metadata": {
+    "usage": {
+      "prompt_tokens": 417,
+      "completion_tokens": 512,
+      "total_tokens": 929
+    },
+    "model": "unknown"
+  },
+  "success": true,
+  "total_test_cases": 0,
+  "processing_time": 37.932801246643066
+}

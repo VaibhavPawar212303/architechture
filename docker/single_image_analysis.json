@@ -1,0 +1,29 @@
+{
+  "single_image_result": {
+    "image_path": "images/loginpage.png",
+    "model_description": "Unfortunately, I am unable to view images directly. However, if you describe an image's content to me in detail, I can help you construct a detailed description based on that information. Please provide the details about the UI elements, layout, and any other specific aspects of the image as described above.",
+    "api_response_metadata": {
+      "usage": {
+        "prompt_tokens": 195,
+        "completion_tokens": 61,
+        "total_tokens": 256
+      },
+      "model": "unknown",
+      "finish_reason": "unknown"
+    },
+    "step1_success": true,
+    "test_cases": [],
+    "raw_test_response": "{\n  \"testCases\": [\n    {\n      \"title\": \"Submit Button Click Test\",\n      \"description\": \"Verify that clicking the submit button correctly processes user input in a form.\",\n      \"steps\": [\n        \"Step 1: Identify Submit Button as 'Submit Form' located centritedly below the form field area.\",\n        \"Step 2: Click on 'Submit Form' button after filling out the required fields with valid data.\",\n        \"Step 3: Expect a confirmation message to appear and for server-side validation to pass, without reloading the page.\"\n      ],\n      \"category\": \"functional\",\n      \"priority\": \"high\"\n    },\n\n    {\n      \"title\": \"Navigation Menu Item Selection Test\",\n      \"description\": \"Ensure that selecting a navigation menu item correctly redirects to its respective section.\",\n      \"steps\": [\n        \"Step 1: Identify Navigation Menu with items 'Home', 'Profile', and 'Settings' at the top of the page.\",\n        \"Step 2: Click on each menu item in sequence ('Home', then 'Profile', followed by 'Settings').\",\n        \"Step 3: Verify that clicking each navigation item redirects to their respective sections without any errors.\"\n      ],\n      \"category\": \"functional\",\n      \"priority\": \"medium\"\n    },\n\n    {\n      \"title\": \"Responsive Design Test for Image Gallery\",\n      \"description\": \"Check if the image gallery layout adjusts correctly on different screen sizes.\",\n      \"steps\": [\n        \"Step 1: Locate 'Image Gallery' UI element with a grid of images, including three columns on desktop view.\",\n        \"Step 2: Resize browser window to simulate mobile and tablet views (e.g., below 600px width).\",\n        \"Step 3: Expect the gallery layout to switch to a single column for mobile devices without disrupting image display.\"\n      ],\n      \"category\": \"visual\",\n      \"priority\": \"medium\"\n    },\n\n    {\n      \"title\": \"Accessibility Test for Form Labels and Inputs\",\n      \"description\": \"Verify that form elements are properly labeled, aiding accessibility.\",\n      \"steps\": [\n        \"",
+    "step2_api_metadata": {
+      "usage": {
+        "prompt_tokens": 388,
+        "completion_tokens": 512,
+        "total_tokens": 900
+      },
+      "finish_reason": "unknown"
+    },
+    "step2_success": true,
+    "total_test_cases": 0,
+    "processing_time": 39.13846015930176
+  }
+}

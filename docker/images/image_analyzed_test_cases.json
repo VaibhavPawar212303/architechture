@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "processing_time_seconds": 44.73,
+    "total_images_processed": 0,
+    "total_test_cases_generated": 0,
+    "successful_images": 0,
+    "failed_images": 1
+  },
+  "testCases": [],
+  "processedImages": [],
+  "summary": {
+    "images_by_context": {},
+    "test_cases_by_priority": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "test_cases_by_category": {}
+  }
+}

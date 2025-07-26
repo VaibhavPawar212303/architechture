@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "generation_time_seconds": 92.75,
+    "total_test_cases": 90,
+    "categories_generated": 6,
+    "combinations_generated": 90,
+    "cpu_cores_used": 6,
+    "high_priority_cases": 48,
+    "medium_priority_cases": 30,
+    "low_priority_cases": 12
+  },
+  "testCases": [
+    {
+      "title": "Login Test - xss input, existing_user, chrome on mobile",
+      "description": "Verify login functionality with xss input for existing_user using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, existing_user, firefox on mobile",
+      "description": "Verify login functionality with xss input for existing_user using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, existing_user, mobile_chrome on mobile",
+      "description": "Verify login functionality with xss input for existing_user using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, new_user, chrome on desktop",
+      "description": "Verify login functionality with xss input for new_user using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and new_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "new_user",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, new_user, chrome on mobile",
+      "description": "Verify login functionality with xss input for new_user using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and new_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "new_user",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, new_user, firefox on desktop",
+      "description": "Verify login functionality with xss input for new_user using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and new_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "new_user",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, new_user, firefox on mobile",
+      "description": "Verify login functionality with xss input for new_user using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and new_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "new_user",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, new_user, mobile_chrome on desktop",
+      "description": "Verify login functionality with xss input for new_user using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and new_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "new_user",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, new_user, mobile_chrome on mobile",
+      "description": "Verify login functionality with xss input for new_user using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for xss input and new_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "new_user",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, locked_account, chrome on mobile",
+      "description": "Verify login functionality with xss input for locked_account using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for xss input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, locked_account, firefox on mobile",
+      "description": "Verify login functionality with xss input for locked_account using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for xss input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "low"
+      }
+    },
+    {
+      "title": "Login Test - xss input, locked_account, mobile_chrome on mobile",
+      "description": "Verify login functionality with xss input for locked_account using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter XSS script in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for xss input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "xss",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "low"
+      }
+    }
+  ]
+}

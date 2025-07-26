@@ -1,0 +1,64 @@
+{
+  "testCases": [
+    {
+      "title": "Valid Login with Correct Username and Password",
+      "description": "Verifies the successful authentication of a user with correct credentials.",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username in the username field",
+        "Enter valid password in the password field",
+        "Click on 'Login' button",
+        "Expect successful redirection or welcome message"
+      ]
+    },
+    {
+      "title": "Invalid Login with Incorrect Password",
+      "description": "Verifies that a user cannot log in with incorrect credentials.",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username in the username field",
+        "Enter invalid password in the password field",
+        "Click on 'Login' button",
+        "Expect error message indicating invalid credentials"
+      ]
+    },
+    {
+      "title": "Empty Fields for Username and Password",
+      "description": "Ensures that the login form does not accept empty fields.",
+      "steps": [
+        "Navigate to login page",
+        "Leave username field blank",
+        "Enter password in the password field",
+        "Click on 'Login' button",
+        "Expect error message indicating that both fields are required"
+      ]
+    },
+    {
+      "title": "Password Visibility Toggle Test",
+      "description": "Verifies the functionality of password visibility toggle.",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid credentials in username and password fields",
+        "Click on 'Show Password' button",
+        "Expect displayed passwords as *****"
+      ]
+    },
+    {
+      "title": "Remember Me Functionality Test",
+      "description": "Verifies the functionality of the remember me feature for returning users.",
+      "steps": [
+        "Navigate to login page as a new user",
+        "Enter valid credentials and check remember me option"
+      ]
+    }
+  ],
+  "metadata": {
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 512,
+      "total_tokens": 724
+    },
+    "extraction_status": "success",
+    "issues": []
+  }
+}

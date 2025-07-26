@@ -1,0 +1,55 @@
+{
+  "testCases": [
+    {
+      "title": "Valid Login with Correct Credentials",
+      "description": "Verify that a user is successfully logged in using correct username and password.",
+      "steps": [
+        "Navigate to login page.",
+        "Enter valid username into the username field.",
+        "Enter corresponding valid password into the password field.",
+        "Click the 'Login' button.",
+        "Check if user is redirected to homepage and a welcome message appears, confirming successful authentication."
+      ]
+    },
+    {
+      "title": "Invalid Login with Incorrect Credentials",
+      "description": "Verify that an error message is displayed when incorrect username or password are entered.",
+      "steps": [
+        "Navigate to login page.",
+        "Enter invalid username into the username field.",
+        "Enter correct password into the password field.",
+        "Error: Invalid username or password.",
+        ",\n\n        "
+      ]
+    },
+    {
+      "title": "Empty Fields Validation for Login",
+      "description": "Ensure that the login form requires both username and password fields.",
+      "steps": [
+        "Navigate to login page without entering any credentials in username or password field.",
+        "Click 'Login' button."
+      ]
+    },
+    {
+      "title": "SQL Injection Attack Test",
+      "description": "Test for the system's resistance to SQL injection during login.",
+      "steps": [
+        "Navigate to login page and enter a username containing malicious SQL code like ' OR '1'='1 into the username field.",
+        "Enter valid password.",
+        "Click 'Login' button."
+      ]
+    }
+  ],
+  "metadata": {
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 512,
+      "total_tokens": 724
+    },
+    "extraction_status": "manual_extraction",
+    "issues": [
+      "JSON parsing failed: Expecting value: line 21 column 1 (char 767)",
+      "Used manual extraction method"
+    ]
+  }
+}

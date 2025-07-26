@@ -1,0 +1,1006 @@
+{
+  "metadata": {
+    "generation_time_seconds": 92.75,
+    "total_test_cases": 90,
+    "categories_generated": 6,
+    "combinations_generated": 90,
+    "cpu_cores_used": 6,
+    "high_priority_cases": 48,
+    "medium_priority_cases": 30,
+    "low_priority_cases": 12
+  },
+  "testCases": [
+    {
+      "title": "Login Test - valid input, existing_user, chrome on desktop",
+      "description": "Verify login functionality with valid input for existing_user using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button",
+        "Verify expected behavior for valid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, existing_user, chrome on mobile",
+      "description": "Verify login functionality with valid input for existing_user using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button",
+        "Verify expected behavior for valid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, existing_user, firefox on desktop",
+      "description": "Verify login functionality with valid input for existing_user using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button",
+        "Verify expected behavior for valid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, existing_user, firefox on mobile",
+      "description": "Verify login functionality with valid input for existing_user using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button",
+        "Verify expected behavior for valid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, existing_user, mobile_chrome on desktop",
+      "description": "Verify login functionality with valid input for existing_user using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button",
+        "Verify expected behavior for valid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, existing_user, mobile_chrome on mobile",
+      "description": "Verify login functionality with valid input for existing_user using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button",
+        "Verify expected behavior for valid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, locked_account, chrome on desktop",
+      "description": "Verify login functionality with valid input for locked_account using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username",
+        "Enter valid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for valid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, locked_account, chrome on mobile",
+      "description": "Verify login functionality with valid input for locked_account using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter valid username",
+        "Enter valid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for valid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, locked_account, firefox on desktop",
+      "description": "Verify login functionality with valid input for locked_account using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for valid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, locked_account, firefox on mobile",
+      "description": "Verify login functionality with valid input for locked_account using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for valid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, locked_account, mobile_chrome on desktop",
+      "description": "Verify login functionality with valid input for locked_account using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for valid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - valid input, locked_account, mobile_chrome on mobile",
+      "description": "Verify login functionality with valid input for locked_account using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter valid username",
+        "Enter valid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for valid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "valid",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, existing_user, chrome on desktop",
+      "description": "Verify login functionality with invalid input for existing_user using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click login button",
+        "Verify expected behavior for invalid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, existing_user, chrome on mobile",
+      "description": "Verify login functionality with invalid input for existing_user using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click login button",
+        "Verify expected behavior for invalid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, existing_user, firefox on desktop",
+      "description": "Verify login functionality with invalid input for existing_user using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click login button",
+        "Verify expected behavior for invalid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, existing_user, firefox on mobile",
+      "description": "Verify login functionality with invalid input for existing_user using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click login button",
+        "Verify expected behavior for invalid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, existing_user, mobile_chrome on desktop",
+      "description": "Verify login functionality with invalid input for existing_user using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click login button",
+        "Verify expected behavior for invalid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, existing_user, mobile_chrome on mobile",
+      "description": "Verify login functionality with invalid input for existing_user using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click login button",
+        "Verify expected behavior for invalid input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, locked_account, chrome on desktop",
+      "description": "Verify login functionality with invalid input for locked_account using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for invalid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, locked_account, chrome on mobile",
+      "description": "Verify login functionality with invalid input for locked_account using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for invalid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, locked_account, firefox on desktop",
+      "description": "Verify login functionality with invalid input for locked_account using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for invalid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, locked_account, firefox on mobile",
+      "description": "Verify login functionality with invalid input for locked_account using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for invalid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, locked_account, mobile_chrome on desktop",
+      "description": "Verify login functionality with invalid input for locked_account using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for invalid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - invalid input, locked_account, mobile_chrome on mobile",
+      "description": "Verify login functionality with invalid input for locked_account using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter invalid username",
+        "Enter invalid password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for invalid input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "invalid",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, existing_user, chrome on desktop",
+      "description": "Verify login functionality with empty input for existing_user using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Click login button",
+        "Verify expected behavior for empty input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, existing_user, chrome on mobile",
+      "description": "Verify login functionality with empty input for existing_user using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Click login button",
+        "Verify expected behavior for empty input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, existing_user, firefox on desktop",
+      "description": "Verify login functionality with empty input for existing_user using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Click login button",
+        "Verify expected behavior for empty input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, existing_user, firefox on mobile",
+      "description": "Verify login functionality with empty input for existing_user using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Click login button",
+        "Verify expected behavior for empty input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, existing_user, mobile_chrome on desktop",
+      "description": "Verify login functionality with empty input for existing_user using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Click login button",
+        "Verify expected behavior for empty input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, existing_user, mobile_chrome on mobile",
+      "description": "Verify login functionality with empty input for existing_user using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Click login button",
+        "Verify expected behavior for empty input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, locked_account, chrome on desktop",
+      "description": "Verify login functionality with empty input for locked_account using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for empty input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, locked_account, chrome on mobile",
+      "description": "Verify login functionality with empty input for locked_account using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for empty input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, locked_account, firefox on desktop",
+      "description": "Verify login functionality with empty input for locked_account using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for empty input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, locked_account, firefox on mobile",
+      "description": "Verify login functionality with empty input for locked_account using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for empty input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, locked_account, mobile_chrome on desktop",
+      "description": "Verify login functionality with empty input for locked_account using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for empty input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - empty input, locked_account, mobile_chrome on mobile",
+      "description": "Verify login functionality with empty input for locked_account using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Leave username field empty",
+        "Leave password field empty",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for empty input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "empty",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, existing_user, chrome on desktop",
+      "description": "Verify login functionality with sql_injection input for existing_user using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, existing_user, chrome on mobile",
+      "description": "Verify login functionality with sql_injection input for existing_user using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "existing_user",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, existing_user, firefox on desktop",
+      "description": "Verify login functionality with sql_injection input for existing_user using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, existing_user, firefox on mobile",
+      "description": "Verify login functionality with sql_injection input for existing_user using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "existing_user",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, existing_user, mobile_chrome on desktop",
+      "description": "Verify login functionality with sql_injection input for existing_user using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, existing_user, mobile_chrome on mobile",
+      "description": "Verify login functionality with sql_injection input for existing_user using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and existing_user"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "existing_user",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, locked_account, chrome on desktop",
+      "description": "Verify login functionality with sql_injection input for locked_account using chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, locked_account, chrome on mobile",
+      "description": "Verify login functionality with sql_injection input for locked_account using chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "locked_account",
+        "browser": "chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, locked_account, firefox on desktop",
+      "description": "Verify login functionality with sql_injection input for locked_account using firefox browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch firefox browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, locked_account, firefox on mobile",
+      "description": "Verify login functionality with sql_injection input for locked_account using firefox browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch firefox browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "locked_account",
+        "browser": "firefox",
+        "device": "mobile",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, locked_account, mobile_chrome on desktop",
+      "description": "Verify login functionality with sql_injection input for locked_account using mobile_chrome browser on desktop device",
+      "steps": [
+        "Navigate to login page",
+        "Launch mobile_chrome browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "desktop",
+        "priority": "high"
+      }
+    },
+    {
+      "title": "Login Test - sql_injection input, locked_account, mobile_chrome on mobile",
+      "description": "Verify login functionality with sql_injection input for locked_account using mobile_chrome browser on mobile device",
+      "steps": [
+        "Navigate to login page",
+        "Set mobile viewport and orientation",
+        "Launch mobile_chrome browser",
+        "Enter SQL injection code in username field",
+        "Enter normal password",
+        "Account should be locked from previous attempts",
+        "Click login button",
+        "Verify expected behavior for sql_injection input and locked_account"
+      ],
+      "metadata": {
+        "category": "combination_test",
+        "input_type": "sql_injection",
+        "user_state": "locked_account",
+        "browser": "mobile_chrome",
+        "device": "mobile",
+        "priority": "high"
+      }
+    }
+  ]
+}
