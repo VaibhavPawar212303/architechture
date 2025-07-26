@@ -1,10 +1,33 @@
-# requirements.txt
+# FastAPI and web server dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
 
-fastapi
-uvicorn[standard]
-pydantic
-torch
-transformers
-pillow
-accelerate
-requests
+# Machine Learning and AI dependencies
+torch==2.1.1
+torchvision==0.16.1
+torchaudio==2.1.1
+transformers==4.36.0
+accelerate==0.25.0
+tokenizers==0.15.0
+
+# Image processing
+Pillow==10.1.0
+
+# HTTP requests
+requests==2.31.0
+httpx==0.25.2
+
+# Additional utilities
+numpy==1.24.4
+packaging==23.2
+
+# Optional: For better performance and GPU support
+# nvidia-ml-py3==7.352.0  # Uncomment if using GPU monitoring
+# flash-attn==2.3.3       # Uncomment for flash attention (requires CUDA)
+
+# Development dependencies (optional)
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# black==23.11.0
+# flake8==6.1.0
