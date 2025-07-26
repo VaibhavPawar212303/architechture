@@ -146,7 +146,7 @@ resource "google_compute_instance" "phi3_vm" {
   }
 
   # Startup script
-  metadata_startup_script = file("${path.module}/setup_vm.sh")
+  metadata_startup_script = file("setup_vm.sh")
 
   metadata = {
     enable-oslogin = "TRUE"
