@@ -57,11 +57,15 @@ class VisionRequest(BaseModel):
     max_tokens: Optional[int] = Field(None, ge=1, le=1000, description="Maximum tokens to generate")
 
 class VisionResponse(BaseModel):
+    model_config = {"protected_namespaces": ()}
+    
     generated_text: str = Field(..., description="The generated analysis text")
     processing_time: float = Field(..., description="Processing time in seconds")
     model_info: dict = Field(..., description="Model information")
 
 class HealthResponse(BaseModel):
+    model_config = {"protected_namespaces": ()}
+    
     status: str
     timestamp: str
     device: str
@@ -89,7 +93,8 @@ def load_model():
             MODEL_ID, 
             device_map=DEVICE, 
             trust_remote_code=True, 
-            torch_dtype=DTYPE
+            torch_dtype=DTYPE,
+            attn_implementation="eager"  # Disable FlashAttention2 for CPU/compatibility
         )
         processor = AutoProcessor.from_pretrained(MODEL_ID, trust_remote_code=True)
         
