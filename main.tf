@@ -146,10 +146,14 @@ resource "google_compute_instance" "phi3_vm" {
   }
 
   # Startup script
-  metadata_startup_script = file("setup_vm.sh")
+  metadata_startup_script = file("${path.module}/setup_vm.sh")
 
   metadata = {
-    enable-oslogin = "TRUE"
+    enable-oslogin                = "TRUE"
+    startup-script-url           = ""  # Clear any conflicting startup script URL
+    shutdown-script              = ""
+    # Enable logging for startup scripts
+    enable-guest-attributes      = "TRUE"
   }
 
   network_interface {
