@@ -1,3 +1,41 @@
+#!/bin/bash
+
+echo "🔍 Diagnosing container issue..."
+
+# Check container status
+echo "📊 Container status:"
+docker ps -a | grep phi3-api
+
+# Get last logs to see what happened
+echo -e "\n📋 Last 20 lines of logs:"
+docker logs --tail 20 phi3-api
+
+# Check if it's an OOM (Out of Memory) issue
+echo -e "\n🧠 Checking for memory issues..."
+docker logs phi3-api 2>&1 | grep -i -E "(killed|memory|oom|out of memory)" || echo "No obvious memory errors found"
+
+# Stop and remove existing container
+echo -e "\n🛑 Cleaning up existing container..."
+docker stop phi3-api 2>/dev/null || true
+docker rm phi3-api 2>/dev/null || true
+
+# Check available system memory
+echo -e "\n💾 System memory info:"
+if command -v free >/dev/null; then
+    free -h
+elif command -v vm_stat >/dev/null; then
+    # macOS
+    echo "macOS system - checking memory..."
+    vm_stat | head -5
+else
+    echo "Cannot determine system memory"
+fi
+
+# Option 1: Try with memory optimized version
+echo -e "\n🔧 Applying memory-optimized fix..."
+
+# Replace main.py with memory-optimized version
+cat > main.py << 'EOF'
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import torch
@@ -146,3 +184,48 @@ async def model_info():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+EOF
+
+# Rebuild with memory optimizations
+echo -e "\n🔨 Rebuilding with memory optimizations..."
+docker build -t phi3-fastapi .
+
+if [ $? -eq 0 ]; then
+    echo "✅ Docker image rebuilt successfully"
+    
+    echo -e "\n🚀 Starting container with increased memory limits..."
+    # Start with explicit memory limits (adjust based on your system)
+    docker run -d \
+        --name phi3-api \
+        -p 8000:8000 \
+        -v $(pwd)/models:/app/models \
+        --memory=6g \
+        --memory-swap=8g \
+        --oom-kill-disable=false \
+        phi3-fastapi
+    
+    if [ $? -eq 0 ]; then
+        echo "✅ Container started with memory optimizations!"
+        echo -e "\n📋 Monitoring startup..."
+        echo "   View logs: docker logs -f phi3-api"
+        echo "   Check health: curl http://localhost:8000/health"
+        echo ""
+        echo "⏳ Wait 2-5 minutes for model loading with optimizations..."
+        
+        # Brief monitoring
+        sleep 5
+        if docker ps | grep -q phi3-api; then
+            echo "✅ Container is running"
+            echo "📊 Container stats:"
+            docker stats phi3-api --no-stream --format "table {{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}"
+        else
+            echo "⚠️ Container may have issues. Check: docker logs phi3-api"
+        fi
+    else
+        echo "❌ Failed to start container"
+        exit 1
+    fi
+else
+    echo "❌ Failed to rebuild Docker image"
+    exit 1
+fi
