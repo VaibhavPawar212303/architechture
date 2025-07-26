@@ -2,8 +2,8 @@
 set -e # Exit on any error
 
 # --- Variables ---
-GIT_REPO_URL="https://github.com/your-username/your-phi3-repo.git"
-APP_DIR="/opt/phi3-vision-api"
+GIT_REPO_URL="https://github.com/VaibhavPawar212303/architechture.git"
+APP_DIR="/"
 
 # --- Log everything ---
 exec > >(tee /var/log/startup-script.log | logger -t startup-script -s 2>/dev/console) 2>&1
