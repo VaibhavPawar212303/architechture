@@ -1,0 +1,9 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+pydantic
+torch --index-url https://download.pytorch.org/whl/cu121
+transformers
+pillow
+accelerate
+requests
