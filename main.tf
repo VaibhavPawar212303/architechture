@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "google" {
-  project = "your-gcp-project-id" # <-- Update with your GCP Project ID
+  project = "ai-testcase" # <-- Update with your GCP Project ID
   region  = "us-central1"
 }
 
